@@ -1,0 +1,6 @@
+{
+  "name": "SmartCare – Doctor Appointment & Pharmacy Management System",
+  "description": "Complete healthcare platform for online and offline doctor appointments, Zoom consultations, digital prescriptions, pharmacy orders, payment processing, and administrative controls.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
