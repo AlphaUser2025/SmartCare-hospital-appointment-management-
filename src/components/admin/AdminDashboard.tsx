@@ -5,7 +5,7 @@ import {
   LayoutDashboard, Users, Stethoscope, Building2, Pill,
   Calendar, CreditCard, FileText, ShoppingBag, History,
   MessageSquare, BarChart3, Settings, LogOut, CheckCircle2,
-  XCircle, Search, Filter, ShieldCheck, AlertTriangle, Eye, RefreshCw
+  XCircle, Search, Filter, ShieldCheck, AlertTriangle, Eye, RefreshCw, ExternalLink
 } from 'lucide-react';
 
 interface AdminDashboardProps {
@@ -198,6 +198,15 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onNavigate }) =>
               </button>
             );
           })}
+          <a
+            href="/admin/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full flex items-center gap-2.5 px-3 py-2.5 rounded-lg font-medium transition-colors text-left text-slate-400 hover:text-white hover:bg-slate-800/60"
+          >
+            <ExternalLink className="w-4 h-4 shrink-0" />
+            <span className="truncate">Django Admin</span>
+          </a>
         </nav>
 
         <div className="p-4 border-t border-slate-800 flex items-center justify-between text-xs">
